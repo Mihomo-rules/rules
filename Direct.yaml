@@ -1,0 +1,112 @@
+---
+payload:
+  # Local proxy/helper processes should never loop through the proxy.
+  - PROCESS-NAME,v2ray
+  - PROCESS-NAME,ss-local
+
+  # Download clients and PT clients are usually better kept direct.
+  - PROCESS-NAME,aria2c
+  - PROCESS-NAME,aria2c.exe
+  - PROCESS-NAME,BitComet.exe
+  - PROCESS-NAME,fdm
+  - PROCESS-NAME,fdm.exe
+  - PROCESS-NAME,Folx
+  - PROCESS-NAME,NetTransport
+  - PROCESS-NAME,NetTransport.exe
+  - PROCESS-NAME,qbittorrent
+  - PROCESS-NAME,qbittorrent-nox
+  - PROCESS-NAME,qbittorrent.exe
+  - PROCESS-NAME,Thunder
+  - PROCESS-NAME,Thunder.exe
+  - PROCESS-NAME,Transmission
+  - PROCESS-NAME,transmission-daemon.exe
+  - PROCESS-NAME,transmission-qt.exe
+  - PROCESS-NAME,uTorrent
+  - PROCESS-NAME,uTorrent.exe
+  - PROCESS-NAME,WebTorrent
+  - PROCESS-NAME,WebTorrent.exe
+  - PROCESS-NAME,WebTorrent Helper
+
+  # Apple software/CDN and captive-network checks.
+  - PROCESS-NAME,storedownloadd
+  - DOMAIN,aod.itunes.apple.com
+  - DOMAIN,appldnld.apple.com
+  - DOMAIN,apptrailers.itunes.apple.com
+  - DOMAIN,gs-loc-cn.apple.com
+  - DOMAIN,iosapps.itunes.apple.com
+  - DOMAIN,mvod.itunes.apple.com
+  - DOMAIN,osxapps.itunes.apple.com
+  - DOMAIN,supportdownload.apple.com
+  - DOMAIN,swcdn.apple.com
+  - DOMAIN,swdownload.apple.com
+  - DOMAIN,swquery.apple.com
+  - DOMAIN,swscan.apple.com
+  - DOMAIN,swdist.apple.com
+  - DOMAIN,updates-http.cdn-apple.com
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,msftncsi.com
+
+  # Steam/large-download CDN paths that are usually fine direct.
+  - DOMAIN,cm.steampowered.com
+  - DOMAIN,csgo.wmsj.cn
+  - DOMAIN,dota2.wmsj.cn
+  - DOMAIN,wmsjsteam.com
+  - DOMAIN,dl.steam.clngaa.com
+  - DOMAIN,dl.steam.ksyna.com
+  - DOMAIN,gstore.val.manlaxy.com
+  - DOMAIN,st.dl.bscstorage.net
+  - DOMAIN,st.dl.eccdnx.com
+  - DOMAIN,st.dl.pinyuncloud.com
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com
+  - DOMAIN,steampowered.com.8686c.com
+  - DOMAIN,steamstatic.com.8686c.com
+  - DOMAIN-SUFFIX,steamchina.com
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamserver.net
+
+  # Game, STUN, and overlay traffic that should not be proxied.
+  - DOMAIN-SUFFIX,srv.nintendo.net
+  - DOMAIN-SUFFIX,stun.playstation.net
+  - DOMAIN,xnotify.xboxlive.com
+  - DOMAIN-SUFFIX,ts.net
+
+  # Personal/direct domains from the previous config.
+  - DOMAIN-SUFFIX,bandwagon314159.cc.cd
+  - DOMAIN-SUFFIX,todust.cc
+  - DOMAIN-SUFFIX,jsdelivr.net
+  - DOMAIN-SUFFIX,bbkss.org
+  - DOMAIN-SUFFIX,owolist.cn
+  - DOMAIN-SUFFIX,qinyues4.cc
+  - DOMAIN-SUFFIX,yangliq.com
+
+  # Private trackers.
+  - DOMAIN-SUFFIX,audiences.me
+  - DOMAIN-SUFFIX,awesome-hd.me
+  - DOMAIN-SUFFIX,broadcasthe.net
+  - DOMAIN-SUFFIX,chdbits.co
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk
+  - DOMAIN-SUFFIX,dmhy.best
+  - DOMAIN-SUFFIX,empornium.me
+  - DOMAIN-SUFFIX,gazellegames.net
+  - DOMAIN-SUFFIX,hdchina.org
+  - DOMAIN-SUFFIX,hdsky.me
+  - DOMAIN-SUFFIX,icetorrent.org
+  - DOMAIN-SUFFIX,jpopsuki.eu
+  - DOMAIN-SUFFIX,keepfrds.com
+  - DOMAIN-SUFFIX,madsrevolution.net
+  - DOMAIN-SUFFIX,m-team.cc
+  - DOMAIN-SUFFIX,nanyangpt.com
+  - DOMAIN-SUFFIX,ncore.cc
+  - DOMAIN-SUFFIX,open.cd
+  - DOMAIN-SUFFIX,ourbits.club
+  - DOMAIN-SUFFIX,passthepopcorn.me
+  - DOMAIN-SUFFIX,privatehd.to
+  - DOMAIN-SUFFIX,redacted.ch
+  - DOMAIN-SUFFIX,sandai.net
+  - DOMAIN-SUFFIX,springsunday.net
+  - DOMAIN-SUFFIX,tjupt.org
+  - DOMAIN-SUFFIX,totheglory.im
+
+  # Compatibility direct rules.
+  - DOMAIN-SUFFIX,xunlei.com
+  - DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
