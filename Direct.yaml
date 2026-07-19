@@ -68,7 +68,6 @@ payload:
   - DOMAIN-SUFFIX,srv.nintendo.net
   - DOMAIN-SUFFIX,stun.playstation.net
   - DOMAIN,xnotify.xboxlive.com
-  - DOMAIN-SUFFIX,ts.net
 
   # Personal/direct domains from the previous config.
   - DOMAIN-SUFFIX,bandwagon314159.cc.cd
