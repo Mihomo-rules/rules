@@ -1,4 +1,3 @@
----
 payload:
   # Local proxy/helper processes should never loop through the proxy.
   - PROCESS-NAME,v2ray
@@ -109,3 +108,6 @@ payload:
   # Compatibility direct rules.
   - DOMAIN-SUFFIX,xunlei.com
   - DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
+
+  # Custom
+  - DOMAIN,raw.kiko-play-niptan.one

@@ -1,4 +1,3 @@
----
 payload:
   - DOMAIN,localhost
   - DOMAIN-SUFFIX,lan
